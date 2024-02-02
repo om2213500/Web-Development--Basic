@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GYM WALA</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" class="rel">
+<!-- <link rel="stylesheet" href="style.css" class="css"> -->
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://media.istockphoto.com/id/1277242852/photo/holding-weight-and-sitting.jpg?s=612x612&w=0&k=20&c=3sy-VVhUYjABpNEMI2aoruXQuOVb__-AUR6BzOHoSJg=');
+        
+    
+        background-size: cover;
+  
+    }
+
+    .app{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+           
+    }
+
+    .app a{
+        width:60px;
+        height:40px;
+        color:white;
+        background-color: black;
+        text-align:center;
+        line-height:50px;
+        font-size:30px;
+        margin:0 20px;
+        display:block;
+        border-radius:50%;
+        border:2px solid white;
+        animation-name: animation;
+        animation-duration:0.30s;
+        animation-delay:0s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes animation {
+        from{background-color: black;}
+        to{background-color: red;}
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 130px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        /* display: block; */
+        display: flex;
+        width: 36%;
+        margin:  17px auto; 
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+     }
+
+    .navbar {
+        
+        display: flex;
+        
+        
+    }
+
+
+    .navbar li {
+        display: flex; 
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: black;
+        display:flex;
+        text-decoration: none;
+        padding: 15px 20px;
+    
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: tan;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        
+        background-color: blue;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        color: orange;
+        
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style> 
+
+<body>
+    <div class="app">
+        <a href="https://www.youtube.com/channel/UCtijN8wDetWWOE7INSWC1tA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com/mr_._sagar_._?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>    
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2023/04/19/03/29/gym-7936489_640.png" alt="">
+            <div>GYM WALA</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM IN KANPUR</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
